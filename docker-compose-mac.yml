@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  app:
+    image: composer/composer:1.1-php5
+    volumes:
+      - project_volume_sync:/app:rw
+volumes:
+  project_volume_sync:
+    external: true
